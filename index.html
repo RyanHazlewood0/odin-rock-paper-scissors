@@ -41,18 +41,15 @@ return "You win!"
   }
 
 function game() {
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-    playRound(playerSelection, computerSelection)
-}
+    for (let i = 0; i < 5; i++) {
+    const playerSelection = prompt("Type rock, paper or scissors!")
+    const computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection))
+       
+    }
+   }
 
-
-const playerSelection = prompt("Type rock, paper or scissors!")
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
-
+game()
 
     </script>
 </body>
